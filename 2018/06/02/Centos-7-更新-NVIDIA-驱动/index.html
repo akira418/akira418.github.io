@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="认真生活，砥砺前行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Akira&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="系统版本CentOS Linux release 7.5.1804 (Core) Linux localhost.localdomain 3.10.0-862.3.2.el7.x86_64 问题描述台式机安装了Centos，在启动的时候直接黑屏，然后没法直接进图形化界面。 报了如下报错： nouveau 0000:01">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos 7 更新 NVIDIA 驱动">
+<meta property="og:url" content="http://yoursite.com/2018/06/02/Centos-7-更新-NVIDIA-驱动/index.html">
 <meta property="og:site_name" content="Akira&#39;s Blog">
-<meta property="og:description" content="认真生活，砥砺前行">
+<meta property="og:description" content="系统版本CentOS Linux release 7.5.1804 (Core) Linux localhost.localdomain 3.10.0-862.3.2.el7.x86_64 问题描述台式机安装了Centos，在启动的时候直接黑屏，然后没法直接进图形化界面。 报了如下报错： nouveau 0000:01:00:0: secboot : error during falcon res">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-02T13:48:26.137Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Akira&#39;s Blog">
-<meta name="twitter:description" content="认真生活，砥砺前行">
+<meta name="twitter:title" content="Centos 7 更新 NVIDIA 驱动">
+<meta name="twitter:description" content="系统版本CentOS Linux release 7.5.1804 (Core) Linux localhost.localdomain 3.10.0-862.3.2.el7.x86_64 问题描述台式机安装了Centos，在启动的时候直接黑屏，然后没法直接进图形化界面。 报了如下报错： nouveau 0000:01:00:0: secboot : error during falcon res">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/02/Centos-7-更新-NVIDIA-驱动/"/>
 
 
 
 
 
-  <title>Akira's Blog</title>
+  <title>Centos 7 更新 NVIDIA 驱动 | Akira's Blog</title>
   
 
 
@@ -155,8 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,178 +284,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/19/How-to-install-the-redash-in-the-Offline-Environment/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Akira">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Akira's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/19/How-to-install-the-redash-in-the-Offline-Environment/" itemprop="url">How to install the redash in the Offline Environment</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T12:25:30+08:00">
-                2018-08-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="/images/redash02.png" alt="Alt text"></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Zabbix监控运维中，积累了很多的基础数据。 结合 Grafana，可以非常棒的展现出时序的一些情况。但是设计到一些静态的报表时，Grafana存在一定的限制。</p>
-<p>开源的BI工具有很多，这里采用了 Redash，进行报表的展示。</p>
-<p>Redash的介绍如下：</p>
-<p>【Redash is an open source tool for teams to query, visualize and collaborate. Redash is quick to setup and works with any data source you might need so you can query from anywhere in no time. 】</p>
-<h3 id="环境版本"><a href="#环境版本" class="headerlink" title="环境版本"></a>环境版本</h3><p>安装环境版本如下：</p>
-<blockquote>
-<p>CentOS Linux release 7.5.1804 (Core)<br>redash 3.0.0<br>Python 2.7<br>postgresql &gt;= 9.3<br>Redis &gt;= 2.8.3<br>Node.js &gt;= v6</p>
-</blockquote>
-<p>Note：</p>
-<blockquote>
-<p>所有的安装包都需要通过一台联网的服务器下载后，导入到内网；<br>文中：联网服务器操作采用 【Online】表示，离线服务器操作采用【Offline】表示；</p>
-</blockquote>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><h4 id="下载安装中需要的RPM包"><a href="#下载安装中需要的RPM包" class="headerlink" title="下载安装中需要的RPM包"></a>下载安装中需要的RPM包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">【Online】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载包到/tmp/packages内</span></span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages gcc gcc-c++ cyrus-sasl-devel make </span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages pwgen python-devel python-pip supervisor</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages nginx curl wget redis </span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages libffi-devel mariadb-devel</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages libffi-devel mariadb-devel</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages freetds-devel</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages nodejs unzip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将下载的RPM包上传到服务器内</span></span><br><span class="line">yum install -y gcc gcc-c++ cyrus-sasl-devel make </span><br><span class="line">yum install -y pwgen python-devel python-pip supervisor</span><br><span class="line">yum install -y nginx curl wget redis </span><br><span class="line">yum install -y libffi-devel mariadb-devel</span><br><span class="line">yum install -y freetds-devel</span><br><span class="line">yum install -y nodejs unzip</span><br></pre></td></tr></table></figure>
-<h4 id="下载-postgresql-9-5"><a href="#下载-postgresql-9-5" class="headerlink" title="下载 postgresql 9.5"></a>下载 postgresql 9.5</h4><blockquote>
-<p>注意下载的版本，需要单独加载postgresql的yum环境</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">【Online】</span><br><span class="line">yum install https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-3.noarch.rpm</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages libpqxx-devel</span><br><span class="line">yum install --downloadonly --downloaddir=/tmp/packages postgresql95-server postgresql95-contrib</span><br><span class="line"></span><br><span class="line">【Offline】</span><br><span class="line">yum install -y libpqxx-devel</span><br><span class="line">yum install -y postgresql95-server postgresql95-contrib</span><br></pre></td></tr></table></figure>
-<h4 id="设置-postgresql"><a href="#设置-postgresql" class="headerlink" title="设置 postgresql"></a>设置 postgresql</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化 postgresql 数据库</span></span><br><span class="line">/usr/pgsql-9.5/bin/postgresql95-setup initdb</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置服务</span></span><br><span class="line">systemctl <span class="built_in">enable</span> postgresql-9.5.service</span><br><span class="line">systemctl start postgresql-9.5.service</span><br><span class="line">systemctl status postgresql-9.5.service</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据库版本</span></span><br><span class="line">psql --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置密码</span></span><br><span class="line">su - postgres</span><br><span class="line">psql -U postgres</span><br><span class="line">ALTER USER postgres WITH PASSWORD <span class="string">'123456'</span></span><br><span class="line">\q</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置远程访问</span></span><br><span class="line">vi /var/lib/pgsql/9.5/data/postgresql.conf</span><br><span class="line">修改<span class="comment">#listen_addresses = 'localhost'  为  listen_addresses='*'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置信任的远程连接</span></span><br><span class="line">vi /var/lib/pgsql/9.5/data/pg_hba.conf</span><br><span class="line">  <span class="comment"># IPv4 local connections:</span></span><br><span class="line">  host    all            all      127.0.0.1/32      ident</span><br><span class="line">  host    all            all      0.0.0.0/0         trust</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">systemctl restart postgresql-9.5.service</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置postgresql的环境变量</span></span><br><span class="line">vim /root/.bash_profile</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/pgsql-9.5/bin:<span class="variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure>
-<h4 id="启动redis"><a href="#启动redis" class="headerlink" title="启动redis"></a>启动redis</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动redis服务</span></span><br><span class="line">systemctl start redis</span><br><span class="line">systemctl <span class="built_in">enable</span> redis</span><br><span class="line">systemctl status redis</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查redis是否能正常运行</span></span><br><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
-<h4 id="目录和账号创建"><a href="#目录和账号创建" class="headerlink" title="目录和账号创建"></a>目录和账号创建</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加账号，并创建目录</span></span><br><span class="line">mkdir -p /opt/redash</span><br><span class="line">adduser --system --no-create-home -s /sbin/nologin redash</span><br><span class="line">chown redash /opt/redash</span><br></pre></td></tr></table></figure>
-<h4 id="下载-Redash-的安装包"><a href="#下载-Redash-的安装包" class="headerlink" title="下载 Redash 的安装包"></a>下载 Redash 的安装包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">【Online】</span><br><span class="line"></span><br><span class="line">sudo wget https://codeload.github.com/getredash/redash/zip/master</span><br><span class="line"></span><br><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> /opt/redash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载最新的redash安装包，并上传到离线环境 /opt/redash 内</span></span><br><span class="line"></span><br><span class="line">sudo chown redash redash-master.zip</span><br><span class="line">sudo -u redash unzip redash-master.zip</span><br><span class="line">ln -nfs /opt/redash/redash-3.0.0 /opt/redash/current</span><br></pre></td></tr></table></figure>
-<h4 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line">pwgen -1s 32获取值，用于REDASH_COOKIE_SECRET</span><br><span class="line"> </span><br><span class="line">vim /opt/redash/.env</span><br><span class="line"><span class="built_in">export</span> REDASH_LOG_LEVEL=<span class="string">"INFO"</span></span><br><span class="line"><span class="built_in">export</span> REDASH_REDIS_URL=redis://localhost:6379/0</span><br><span class="line"><span class="built_in">export</span> REDASH_DATABASE_URL=<span class="string">"postgresql:///redash"</span></span><br><span class="line"><span class="built_in">export</span> REDASH_COOKIE_SECRET=xQ11GIKUXtaMKAyf6OESnssU2zczpy27</span><br><span class="line"> </span><br><span class="line">ln -nfs /opt/redash/.env /opt/redash/current/.env</span><br></pre></td></tr></table></figure>
-<h4 id="Pip安装"><a href="#Pip安装" class="headerlink" title="Pip安装"></a>Pip安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">【Online】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置阿里云的pip库</span></span><br><span class="line"></span><br><span class="line">vi /root/.pip/pip.conf</span><br><span class="line">[global]</span><br><span class="line">timeout = 6000</span><br><span class="line">index-url = http://mirrors.aliyun.com/pypi/simple</span><br><span class="line"></span><br><span class="line">[install]</span><br><span class="line">trusted-host=mirrors.aliyun.com</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载需要安装的离线安装包</span></span><br><span class="line"></span><br><span class="line">pip download -r requirements.txt -r requirements_dev.txt -r requirements_all_ds.txt -d /tmp/pip</span><br><span class="line"></span><br><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line"><span class="comment"># 上传离线下载的安装包到 /pip 目录内</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> /opt/redash/current</span><br><span class="line"></span><br><span class="line">pip install --no-index -f /pip psycopg2</span><br><span class="line">pip install --no-index -f /pip -r requirements.txt -r requirements_dev.txt -r requirements_all_ds.txt</span><br></pre></td></tr></table></figure>
-<h4 id="NPM-安装"><a href="#NPM-安装" class="headerlink" title="NPM 安装"></a>NPM 安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">【Online】</span><br><span class="line">curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -</span><br><span class="line">yum install -y nodejs</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line">cnpm install</span><br><span class="line">cnpm run build</span><br><span class="line"></span><br><span class="line">【Offline】</span><br><span class="line"></span><br><span class="line">上传NPM下载的包到 /opt/redash/current/node_modules 内。</span><br></pre></td></tr></table></figure>
-<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo -u postgres createuser redash --no-superuser --no-createdb --no-createrole</span><br><span class="line">sudo -u postgres createdb redash --owner=redash</span><br><span class="line">sudo -u redash bin/run ./manage.py database create_tables</span><br></pre></td></tr></table></figure>
-<h4 id="supervisord配置"><a href="#supervisord配置" class="headerlink" title="supervisord配置"></a>supervisord配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /opt/redash/current/setup/ubuntu/files/supervisord.conf /etc/supervisord.d/redash.ini</span><br><span class="line">systemctl start supervisord</span><br></pre></td></tr></table></figure>
-<h4 id="Nginx配置"><a href="#Nginx配置" class="headerlink" title="Nginx配置"></a>Nginx配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cp /opt/redash/current/setup/ubuntu/files/nginx_redash_site /etc/nginx/conf.d/nginx_redash_site.conf</span><br><span class="line">修改/etc/nginx/conf.d/nginx_redash_site.conf中端口为8080</span><br><span class="line"></span><br><span class="line">页面访问 http://ip:8080</span><br></pre></td></tr></table></figure>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul>
-<li><a href="https://www.cnblogs.com/shhnwangjian/p/8417748.html" target="_blank" rel="noopener">https://www.cnblogs.com/shhnwangjian/p/8417748.html</a></li>
-<li><a href="https://redash.io/help/open-source/setup" target="_blank" rel="noopener">https://redash.io/help/open-source/setup</a></li>
-</ul>
-<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><table>
-<thead>
-<tr>
-<th>日期</th>
-<th>修改内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>20180819</td>
-<td>初稿</td>
-</tr>
-<tr>
-<td>20180819</td>
-<td>修改格式</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -484,9 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/02/Centos-7-更新-NVIDIA-驱动/" itemprop="url">Centos 7 更新 NVIDIA 驱动</a></h1>
+          <h1 class="post-title" itemprop="name headline">Centos 7 更新 NVIDIA 驱动</h1>
         
 
         <div class="post-meta">
@@ -518,6 +348,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -536,9 +371,7 @@
       
 
       
-        
-          
-            <h3 id="系统版本"><a href="#系统版本" class="headerlink" title="系统版本"></a>系统版本</h3><pre><code>CentOS Linux release 7.5.1804 (Core)
+        <h3 id="系统版本"><a href="#系统版本" class="headerlink" title="系统版本"></a>系统版本</h3><pre><code>CentOS Linux release 7.5.1804 (Core)
 Linux localhost.localdomain 3.10.0-862.3.2.el7.x86_64
 </code></pre><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>台式机安装了Centos，在启动的时候直接黑屏，然后没法直接进图形化界面。</p>
 <p>报了如下报错：</p>
@@ -600,8 +433,6 @@ systemctl set-default graphical.target
 大功告成~
 </code></pre><h3 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h3><pre><code>http://www.advancedclustering.com/act_kb/installing-nvidia-drivers-rhel-centos-7/
 </code></pre>
-          
-        
       
     </div>
     
@@ -616,14 +447,36 @@ systemctl set-default graphical.target
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/19/How-to-install-the-redash-in-the-Offline-Environment/" rel="prev" title="How to install the redash in the Offline Environment">
+                How to install the redash in the Offline Environment <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -633,10 +486,11 @@ systemctl set-default graphical.target
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -644,6 +498,10 @@ systemctl set-default graphical.target
 
 
           
+
+  
+
+
 
         </div>
         
@@ -664,8 +522,17 @@ systemctl set-default graphical.target
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -727,6 +594,22 @@ systemctl set-default graphical.target
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统版本"><span class="nav-number">1.</span> <span class="nav-text">系统版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">2.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#升级步骤："><span class="nav-number">3.</span> <span class="nav-text">升级步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-下载对应的驱动："><span class="nav-number">3.1.</span> <span class="nav-text">1.下载对应的驱动：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-加载EPEL源，安装DKMS："><span class="nav-number">3.2.</span> <span class="nav-text">2.加载EPEL源，安装DKMS：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-升级和安装需要的包："><span class="nav-number">3.3.</span> <span class="nav-text">3. 升级和安装需要的包：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-修改grub文件："><span class="nav-number">3.4.</span> <span class="nav-text">4. 修改grub文件：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-修改启动项："><span class="nav-number">3.5.</span> <span class="nav-text">5. 修改启动项：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-重启系统："><span class="nav-number">3.6.</span> <span class="nav-text">6. 重启系统：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-安装驱动："><span class="nav-number">3.7.</span> <span class="nav-text">7. 安装驱动：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接："><span class="nav-number">4.</span> <span class="nav-text">参考链接：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -887,6 +770,10 @@ systemctl set-default graphical.target
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
